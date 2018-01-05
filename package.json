@@ -4,12 +4,6 @@
   "description": "Earn extra money on your car's idle capacity",
   "author": "alexander@timu.co.za",
   "private": true,
-  "config": {
-    "nuxt": {
-      "host": "0.0.0.0",
-      "port": "3000"
-    }
-  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
