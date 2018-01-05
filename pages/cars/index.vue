@@ -6,7 +6,7 @@
         FreeCar
       </h1>
       <h2 class="subtitle">
-        Earn money on your car's idle capacity
+        Here is the list of cars
       </h2>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
