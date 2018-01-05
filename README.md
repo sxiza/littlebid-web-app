@@ -1,6 +1,6 @@
 # freecar
 
-> Earn extra money on your car's idle capacity
+> Earn money on your car's idle capacity
 
 ## Build Setup
 
