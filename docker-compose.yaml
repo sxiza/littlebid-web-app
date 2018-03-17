@@ -1,0 +1,27 @@
+version: "3"
+services:
+  web-app:
+    build: 
+      context: ./
+      dockerfile: web-app.dockerfile
+      args:
+        env: local
+        app_dir: /usr/src/freecar-web-app
+    image: xanderza/freecar-web-app:latest
+    ports:
+      - "4002:3000"
+      - "445:443"
+    volumes:
+      - /var/www/freecar-web-app:/usr/src/freecar-web-app
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: 128M
+      restart_policy:
+        condition: on-failure
+    networks:
+      - webnet
+networks:
+  webnet:

@@ -1,8 +1,8 @@
 {
   "name": "freecar",
   "version": "1.0.0",
-  "description": "Earn extra money on your car's idle capacity",
-  "author": "alexander@timu.co.za",
+  "description": "Earn money on your car's idle capacity",
+  "author": "alex@alexgloss.com",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
+    "cross-env": "^5.1.4",
     "eslint": "^4.3.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
