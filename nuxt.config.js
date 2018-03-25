@@ -10,7 +10,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: "Earn extra money on your car's idle capacity" }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
     ]
   },
   /*
@@ -30,16 +31,22 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
+          options : {
+              fix : true
+          }
         })
       }
-    }
+    },
+    vendor: ['materialize-css']
   },
+  css: ['~assets/css/app.scss'],
+  plugins: ['~plugins/materialize.js']
 
-  watchers: {
-    webpack: {
-      aggregateTimeout: 300,
-      poll: 300
-    }
-  }
+  // watchers: {
+  //   webpack: {
+  //     aggregateTimeout: 300,
+  //     poll: 300
+  //   }
+  // }
 }
