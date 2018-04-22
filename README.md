@@ -1,6 +1,6 @@
-# freecar
+# littlebid
 
-> Earn money on your car's idle capacity
+> Bid on insanely cheap products!
 
 ## Build Setup
 

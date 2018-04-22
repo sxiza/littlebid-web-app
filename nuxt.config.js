@@ -1,9 +1,11 @@
+const nodeExternals = require('webpack-node-externals')
+
 module.exports = {
   /*
   ** Headers of the page
   */
   head: {
-    title: 'FreeCar',
+    title: 'LittleBid',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -11,7 +13,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
   /*
@@ -26,7 +28,7 @@ module.exports = {
     ** Run ESLint on save
     */
     extend (config, ctx) {
-      if (ctx.dev && ctx.isClient) {
+      if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
@@ -37,11 +39,19 @@ module.exports = {
           }
         })
       }
+      if (ctx.isServer) {
+        config.externals = [
+          nodeExternals({
+            whitelist: [/^vuetify/]
+          })
+        ]
+      }
     },
-    vendor: ['materialize-css']
+    vendor: ['vuetify'],
+    extractCSS: true,
   },
-  css: ['~assets/css/app.scss'],
-  plugins: ['~plugins/materialize.js']
+  css: ['~assets/css/app.styl'],
+  plugins: ['~/plugins/vuetify'],
 
   // watchers: {
   //   webpack: {

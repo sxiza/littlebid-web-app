@@ -6,7 +6,7 @@
 				<div class="hero-overlay"></div>
 			</div>
 			<div class="container">
-				<h1 class="white-text">FreeCar</h1>
+				<h1 class="white-text">LittleBid</h1>
 				<p class="white-text flow-text">Dynamic car rental from as short as <b>one hour</b>. Doesn't that sound awesome?</p>
 				<div>
 					<a class="waves-effect waves-light btn-large red lighten-2" href="/register">How It Works</a>
@@ -25,7 +25,7 @@
 				<div class="hero-overlay"></div>
 			</div>
 			<div class="container">
-				<h1 class="white-text">FreeCar Owners</h1>
+				<h1 class="white-text">LittleBid Owners</h1>
 				<p class="white-text flow-text">Earn money on your car's idle capacity</p>
 				<div>
 					<a class="waves-effect waves-light btn-large red lighten-2" href="/register">Register</a>

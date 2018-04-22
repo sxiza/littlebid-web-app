@@ -6,13 +6,13 @@ services:
       dockerfile: web-app.dockerfile
       args:
         env: local
-        app_dir: /usr/src/freecar-web-app
-    image: xanderza/freecar-web-app:latest
+        app_dir: /usr/src/littlebid-web-app
+    image: xanderza/littlebid-web-app:latest
     ports:
       - "4002:3000"
       - "445:443"
     volumes:
-      - /var/www/freecar-web-app:/usr/src/freecar-web-app
+      - /var/www/littlebid-web-app:/usr/src/littlebid-web-app
     deploy:
       replicas: 2
       resources:

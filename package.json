@@ -1,11 +1,11 @@
 {
-  "name": "freecar",
+  "name": "littlebid-web-app",
   "version": "1.0.0",
-  "description": "Earn money on your car's idle capacity",
+  "description": "Bid on insanely cheap products!",
   "author": "alex@alexgloss.com",
   "private": true,
   "scripts": {
-    "dev": "cross-env HOST=0.0.0.0 PORT=3000 nuxt",
+    "dev": "cross-env HOST=0.0.0.0 PORT=3001 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -13,8 +13,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "materialize-css": "^1.0.0-beta",
-    "nuxt": "^1.0.0-rc11"
+    "nuxt": "^1.0.0",
+    "vuetify": "^1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -28,6 +28,8 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "node-sass": "^4.8.3",
-    "sass-loader": "^6.0.7"
+    "sass-loader": "^6.0.7",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1"
   }
 }

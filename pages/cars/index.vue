@@ -3,7 +3,7 @@
     <div>
       <logo/>
       <h1 class="title">
-        FreeCar
+        LittleBid
       </h1>
       <h2 class="subtitle">
         Here is the list of cars

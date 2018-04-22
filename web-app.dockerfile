@@ -5,7 +5,7 @@ ARG env
 ARG app_dir
 
 # Create app directory
-WORKDIR /usr/src/freecar-web-app
+WORKDIR /usr/src/littlebid-web-app
 
 # Copy and install files
 # COPY package.json $app_dir/package.json

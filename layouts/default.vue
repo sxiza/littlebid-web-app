@@ -2,7 +2,7 @@
 	<div>
 		<nav>
 			<div class="nav-wrapper">
-				<router-link :to="{ name: 'index'}" class="brand-logo">FreeCar</router-link>
+				<router-link :to="{ name: 'index'}" class="brand-logo">LittleBid</router-link>
 				<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					<li><router-link :to="{ name: 'cars'}">Register</router-link></li>
@@ -35,7 +35,7 @@
 <script>
 export default {
 	mounted() {
-		M.AutoInit();
+		// M.AutoInit();
 	}
 }
 </script>
